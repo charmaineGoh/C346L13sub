@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, TextInput, TouchableOpacity } from 'react-native'; // Import TouchableOpacity
+import { View, Text, FlatList, TextInput, TouchableOpacity } from 'react-native';
 import { fetchData } from '../utils/api';
 import styles from '../styles';
 import { useNavigation } from '@react-navigation/native';
@@ -39,7 +39,7 @@ const HomeScreen = () => {
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         style={styles.itemContainer}
-                        onPress={() => handleItemPress(item)} // Attach onPress here
+                        onPress={() => handleItemPress(item)}
                     >
                         <Text style={styles.title}>{item.artform || 'Unknown Art Form'}</Text>
                     </TouchableOpacity>

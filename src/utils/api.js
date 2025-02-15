@@ -19,7 +19,7 @@ export const fetchData = async () => {
             return acc;
         }, {});
 
-        // Convert grouped data into an array of objects
+
         return Object.keys(groupedData).map(artform => ({
             artform,
             years: groupedData[artform],
